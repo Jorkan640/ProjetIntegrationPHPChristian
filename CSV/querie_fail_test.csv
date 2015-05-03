@@ -1,0 +1,6 @@
+﻿num;theme;enonce;query;nb
+1;;Ecrivez une requête SQL qui permette d'afficher tout le contenu de votre table. ;SELECT * FROM bd1.albums
+2;;Donnez, pour chaque album, son isbn, son titre, son scénariste, son dessinateur ainsi que son année d'édition.;SELECT isbn, titre, scenariste, dessinateur, annee_edition FROM bd1.albums;44
+3;;Quelles sont les albums édités par "Dupuis" ?;SELECT * FROM bd1.albums WHERE editeur = 'Dupuis';9
+4;;Quels sont les titres des albums dont le scénariste est "Goscinny"?;SELECT DISTINCT titre FROM bd1.albums WHERE scenariste = ‘Goscinny’
+Quels sont les titres et les éditeurs des albums dont un des auteurs (scénariste, dessinateur ou coloriste) s'appelle "Uderzo"?;SELECT DISTINCT titre, editeur FROM bd1.albums WHERE scenariste = 'Uderzo' OR dessinateur = 'Uderzo' OR coloriste = 'Uderzo' ;8
